@@ -52,7 +52,7 @@ function evade_hunt_dir()
             last_move = "hunt"
             log("hunt")
         end
-        return sum_hunt_dir / math.abs(sum_hunt_dir) * self.max_step_angle, hunt_urgency > boost_threshhold
+        return sum_hunt_dir / math.abs(sum_hunt_dir) * self.max_step_angle, max_hunt_urgency > boost_threshhold
     else
         if last_move ~= "eat" then
             last_move = "eat"
